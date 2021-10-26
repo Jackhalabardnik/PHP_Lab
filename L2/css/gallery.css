@@ -1,0 +1,45 @@
+main
+{
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+main > a {
+    padding: 10px;
+    margin: 5px;
+    background-color: #80a880;
+    box-shadow: 5px 5px #6d8f6d;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 180px;
+    height: 150px;
+}
+
+@keyframes light {
+    0%   {background-color: #80a880;}
+    25%  {background-color: #95c095;}
+    50%  {background-color: #98c598;}
+    100% {background-color: rgb(165, 212, 165);}
+}
+
+main > a:hover {
+    background-color: rgb(165, 212, 165);
+    animation: light 0.25s;
+}
+
+img {
+    border-radius: 3px;
+}
+
+@media screen and (min-width: 581px) and (max-width: 720px) { 
+    main > a {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 580px) { 
+    main > a {
+        width:100%;
+        text-align: center;
+    }
+}

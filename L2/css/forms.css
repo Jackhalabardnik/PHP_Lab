@@ -1,0 +1,56 @@
+label {
+    margin-right: 20px;
+}
+
+select {
+    text-align: center;
+    margin-left: 2px;
+    width: 145px;
+}
+
+input {
+    margin: 2px;
+    
+}
+
+*.input_box {
+    background-color: rgb(251, 252, 247);
+    border: 1.5px solid darkolivegreen;
+    box-shadow: 2px 2px rgb(116, 146, 65);
+}
+
+*.input_box:hover {
+    border: 1.5px solid rgb(117, 145, 68);
+}
+
+*.button {
+    border-radius: 5px;
+    border: 0;
+    color:white;
+    font-size: 16px;
+    width: 80px;
+    height: 30px;
+    background-color: #2e8b57;
+    box-shadow: 2px 2px #257046;
+}
+
+*.button:hover {
+    background-color: #36a064;
+}
+
+h4 {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+*.line {
+    display: ruby;
+}
+
+*.inputs td{
+    text-align: left;
+}
+
+table {
+    width:200px;
+}

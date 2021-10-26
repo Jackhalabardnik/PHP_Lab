@@ -1,0 +1,191 @@
+body {
+    background: white;
+    color: #000040;
+}
+
+h1,
+h2,
+h3 {
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+body {
+    background: rgb(251, 252, 247);
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding-bottom:20px;
+}
+
+main {
+    background:  darkseagreen;
+    display: flex;
+    flex-flow: column wrap;
+    width: 75%;
+    padding: 1%;
+    border-radius: 5px;
+    box-shadow: 5px 5px rgb(115, 161, 115);
+}
+
+aside {
+    display: flex;
+    flex-flow: column wrap;
+    width: 20%;
+    padding: 1%;
+}
+
+header
+{
+    left: auto;
+    right: auto;
+    width: 100%;
+    background-color: yellowgreen;
+    padding: 5px 0 5px 0;
+    color: white;
+    text-align: center;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+footer {
+    position:fixed;
+    bottom: 0;
+    width: 90%;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+footer >p {
+    margin-bottom: 0;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    margin-top: 50px;
+    background-color: yellowgreen;
+}
+
+*.box {
+    background: seagreen;
+    color: #dbffff;
+    padding: 3px;
+    margin: 5px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px rgb(33, 99, 62);
+}
+
+*.box > h3 {
+    text-align: center;
+}
+
+*.box a:hover {
+    background: darkgreen;
+    color: #dbffff;
+    border-radius: 3px;
+    padding: 0 3px 3px 3px;
+}
+
+*.box a {
+    color: #ffffff;
+}
+
+nav {
+    background: seagreen;
+    text-align: center;
+    overflow: hidden;
+    font-size: larger;
+    font-family: fantasy;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+nav a {
+    color: white;
+    background: seagreen;
+    display: flex;
+    flex-flow: wrap;
+    padding:  5px 5px 5px 5px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background: darkgreen;
+}
+
+.dropdown{
+    overflow: hidden;
+    display: none;
+}
+
+.dropdown_trigger:hover .dropdown{
+    position: absolute;
+    background: rgb(113, 158, 132);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 177px;
+}
+
+*.first_nav_el {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+*.last_nav_el {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+*.first_row {
+    display: flex;
+    flex-direction: row;
+}
+*.second_row {
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (min-width: 481px) and (max-width: 720px) { 
+    *.first_row {
+        flex-direction: column;
+    }
+    *.second_row {
+        flex-direction: column;
+    } 
+}
+
+@media screen and (max-width: 480px) { 
+    nav {
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+    } 
+    nav a{
+        justify-content: center;
+    }
+
+    *.first_row {
+        flex-direction: column;
+    }
+    *.second_row {
+        flex-direction: column;
+    }
+
+    .dropdown_trigger:hover .dropdown{
+        width: auto;
+    }
+    main {
+        width: 100%;
+    }
+    aside {
+        width: 40%;
+    }
+}
