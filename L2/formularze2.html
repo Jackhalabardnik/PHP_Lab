@@ -36,7 +36,7 @@
             <h3>
                 Przykładowy formularz HTML:
             </h3>
-            <form action="odbierz2.php" method="post">
+            <form action="odbierz2.php" method="get">
                 <table>
                     <tr>
                         <td>
@@ -65,7 +65,7 @@
                             </label>
                         </td>
                         <td>
-                            <input class="input_box" type="number" name="wiek" id="wiek" placeholder="20" />
+                            <input class="input_box" name="wiek" id="wiek" placeholder="20" />
                         </td>
                     </tr>
                     <tr>
@@ -96,9 +96,9 @@
                     <tr>
                         <td colspan="2">
                             <h4> Zamawiam tutorial z języka:</h4>
-                            <input class="input_box" type="checkbox" name="jezyk" value="PHP" checked /> PHP
-                            <input class="input_box" type="checkbox" name="jezyk" value="C" /> C++
-                            <input class="input_box" type="checkbox" name="jezyk" value="Java" /> Język Java
+                            <input class="input_box" type="checkbox" name="jezyk[]" value="PHP" checked /> PHP
+                            <input class="input_box" type="checkbox" name="jezyk[]" value="C" /> C++
+                            <input class="input_box" type="checkbox" name="jezyk[]" value="Java" /> Język Java
                         </td>
                     </tr>
                     <tr>   
