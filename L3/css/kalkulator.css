@@ -1,0 +1,12 @@
+thead {
+    text-align: center;
+    font-weight: bold;
+}
+
+td:nth-child(even) {
+    text-align: center;
+}
+
+table {
+    width: 400px;
+}
