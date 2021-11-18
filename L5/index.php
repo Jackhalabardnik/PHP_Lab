@@ -2,14 +2,28 @@
 
 include_once("classes/RegistrationForm.php");
 
-// $user1 = new User("Tom", "Tomasz Rura", "t@rura.pl", "123");
-
-// $user2 = new User("ATR", "Artur Rura", "a@rura.pl", "123");
-
-// $user1->show();
-// $user2->show();
-
 $form = new RegistrationForm();
 
+if(filter_input(INPUT_POST, 'submit', FILTER_SANITIZE_FULL_SPECIAL_CHARS))
+{
+    $user = $form->checkUser();
+    if($user === NULL)
+    {
+        echo "<p> Niepoprawne dane rejestracji </p>";
+    }
+    else
+    {
+        echo "<p> Poprawne dane rejestracji: </p>";
+        $user->show();
+        $user->saveJSON("users.json");
+        $user->saveXML("users.xml");
+    }
+}
+
+echo "<h2>Wszystkie dane z JSON:</h2>";
+User::getAllUsersJSON("users.json");
+
+echo "<h2>Wszystkie dane z XML:</h2>";
+User::getAllUsersXML("users.xml");
 ?>
 

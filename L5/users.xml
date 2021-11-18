@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users> 
+    <user> 
+        <username>admin</username>
+        <passwd>admin</passwd> 
+        <fullname>Administrator</fullname> 
+        <email>admin@gmail.com</email> 
+        <date>2018-09-10</date> 
+        <status>2</status>         
+    </user> 
+    <user> 
+        <username>beatap</username> 
+        <passwd>beatap</passwd> 
+        <fullname>Beata P.</fullname> 
+        <email>beatap@gmail.com</email> 
+        <date>2018-10-10</date> 
+        <status>1</status>         
+    </user> 
+<user><username>Baron</username><passwd>$2y$10$Q0gX88T6lpj2M0lKbCuwiudDiSzLt1Jv440yVJ.h29U9uZ8gFH6i6</passwd><fullname>Bartosz Zdas</fullname><email>wojcik@email.wp</email><date>2021-11-18</date><status>1</status></user><user><username>Rozbujnik</username><passwd>$2y$10$hM.0JG96kEMFQKF5HYDBMeIxQV.xIWew3A5PGMAf7BxmHxn36SaOm</passwd><fullname>Wojcik Jdsa</fullname><email>rozmak@oxygen.notincluded</email><date>2021-11-18</date><status>1</status></user></users>
