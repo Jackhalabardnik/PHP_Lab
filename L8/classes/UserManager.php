@@ -32,6 +32,9 @@ class UserManager {
    return $userId; 
   } 
   function logout($db) { 
+        session_start();
+        
+
         //pobierz id bieżącej sesji (pamiętaj o session_start() 
         //usuń sesję (łącznie z ciasteczkiem sesyjnym) 
         //usuń wpis z id bieżącej sesji z tabeli logged_in_users 
