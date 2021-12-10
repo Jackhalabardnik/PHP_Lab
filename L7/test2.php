@@ -2,15 +2,13 @@
 
 include_once("classes/User.php");
 
-session_start(); 
+session_start();
 
-$user = new User("Tomek123", "Tomasz Nowak", "tomasz@email.pl", "NowakTomek123");
+$user = unserialize($_SESSION["user"]);
 
 echo("<h2>Dane użytkownika:</h2>");
 
 $user->show();
-
-$_SESSION["user"] = serialize($user);
 
 echo("<h2> Id sesji</h2>");
 echo(session_id());
@@ -25,7 +23,15 @@ foreach ($_COOKIE as $key => $value) {
     echo("Key: \"".$key."\" Value: \"".$value."\"<br>");
 }
 
+//Prawidłowe zamknięcie sesji
+
+if (isset($_COOKIE[session_name()])) {
+    setcookie(session_name(), '', time() -42000, '/');
+}
+
+session_destroy();
+
 echo("<h2>Link do test2.php</h2>");
-echo("<a href=test2.php>Przejdź do strony 2</a>");
+echo("<a href=test1.php>Przejdź do strony 1</a>");
 
 ?>
