@@ -8,7 +8,7 @@ table, th, td {
 <?php
 
 include_once("classes/RegistrationForm.php");
-include_once "classes/Baza.php";
+include_once("classes/Baza.php");
 
 //tworzymy uchwyt do bazy danych: 
 $bd = new Baza("localhost", "root", "", "klienci");
